@@ -10,7 +10,7 @@ public class ListSumServiceTest {
     public void testInitialization(){
         Integer[] set = new Integer[]{1, 3, 5, 2};
         ListSumService sumService = ListSumService.getInstance(List.of(set));
-        assertEquals(set, sumService.getNumbers());
+        assertArrayEquals(set, sumService.getNumbers());
     }
 
     @Test

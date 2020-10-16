@@ -4,13 +4,13 @@ import java.util.List;
 
 public class ListSumService {
     private List<Integer> numbers;
-    private static ListSumService sumService = null;
 
     private ListSumService(List<Integer> numbers) {
         this.numbers = numbers;
     }
 
     public static ListSumService getInstance(List<Integer> numbers) {
+        ListSumService sumService = null;
         return sumService = new ListSumService(numbers);
     }
 
