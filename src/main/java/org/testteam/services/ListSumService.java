@@ -14,8 +14,11 @@ public class ListSumService {
         return sumService = new ListSumService(numbers);
     }
 
-    public Integer[] getNumbers() {
-        return numbers.toArray(Integer[]::new);
+    public int[] getNumbers() {
+        int[] set = new int[numbers.size()];
+        for (int i =0; i<numbers.size();i++)
+            set[i] = numbers.get(i);
+        return set;
     }
 
     public void setNumbers(List<Integer> numbers) {
