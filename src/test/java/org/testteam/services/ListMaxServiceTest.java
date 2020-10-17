@@ -28,6 +28,6 @@ public class ListMaxServiceTest {
             list.add(set[i]);
         }
         ListMaxService maxService = ListMaxService.getInstance(list);
-        Assertions.assertEquals(95, maxService.getMax());
+        Assertions.assertEquals(5, maxService.getMax());
     }
 }
